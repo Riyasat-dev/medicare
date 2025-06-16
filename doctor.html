@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HospitalCare</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-custum navbar-light bg-light p-5"
+    >
+      <div class="container-fluid">
+        <div class="logo">
+          <a
+            href="index.html"
+            style="text-decoration: none; display: flex; align-items: center"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              style="margin-right: 10px"
+            >
+              <path
+                d="M12 2L2 7V17L12 22L22 17V7L12 2Z"
+                stroke="#1f2b7b"
+                stroke-width="2"
+              />
+              <path d="M12 22V12" stroke="#1f2b7b" stroke-width="2" />
+              <path d="M7 7L17 17" stroke="#1f2b7b" stroke-width="2" />
+              <path d="M17 7L7 17" stroke="#1f2b7b" stroke-width="2" />
+            </svg>
+            <span style="font-size: 22px; font-weight: 700; color: #559af3"
+              >MediCare</span
+            >
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctor.html">Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="department.html">Department</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="blog.html"
+                id=""
+                role=""
+                data-bs-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="blog_details.html"
+                    >blog-Details</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="elements.html">Elements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a
+              href="f"
+              class="text-light"
+              style="text-decoration: none"
+              id="loginBtn"
+            >
+              <button class="btn btn-outline btn-primary px-4" type="submit">
+                Login
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        class="container-fluid slider-area d-flex align-items-center"
+        style="height: 300px; background: url(assets/img/hero/hero2.png)"
+      >
+        <div class="row justify-content-center w-100">
+          <div class="col-12 text-center">
+            <div class="hero__caption">
+              <h1
+                class="cd-headline letters scale tex m-0"
+                style="color: #102039"
+              >
+                Doctor
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-area section-padding30">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="section-tittle text-center mb-100 p-5">
+                <span>Our Doctors</span>
+                <h1>Our Specialist</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team2.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Alvin Maxwell</a></h3>
+                  <span>cardiology</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team3.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Maria Smith</a></h3>
+                  <span>Dermotology</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team1.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Angela Doe</a></h3>
+                  <span>Family Medicine</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-area section-padding30">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team2.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Alvin Maxwell</a></h3>
+                  <span>cardiology</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team3.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Maria Smith</a></h3>
+                  <span>Dermotology</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+              <div class="single-team mb-30">
+                <div class="team-img">
+                  <img src="assets/img/gallery/team1.png" alt="" />
+                </div>
+                <div class="team-caption">
+                  <h3><a href="#">Angela Doe</a></h3>
+                  <span>Family Medicine</span>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div
+        class="footer-area section-bg"
+        data-background="assets/img/gallery/footer_bg.jpg"
+      >
+        <div class="container">
+          <div class="footer-top footer-padding">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="logo">
+                    <a
+                      href="index.html"
+                      style="
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        style="margin-right: 10px"
+                      >
+                        <path
+                          d="M12 2L2 7V17L12 22L22 17V7L12 2Z"
+                          stroke="#0062ff"
+                          stroke-width="2"
+                        />
+                        <path d="M12 22V12" stroke="#0062ff" stroke-width="2" />
+                        <path
+                          d="M7 7L17 17"
+                          stroke="#0062ff"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M17 7L7 17"
+                          stroke="#0062ff"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <span
+                        style="
+                          font-size: 22px;
+                          font-weight: 700;
+                          color: #0062ff;
+                        "
+                        >MediCare</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4 class="mt-5">doctor</h4>
+                    <div class="footer-pera">
+                      <p class="info1">Your health, our priority.</p>
+                      <p class="info1">📍 Pakistan, Hyderabad</p>
+                      <p class="info1">
+                        Committed to excellence in patient care, technology, and
+                        service.
+                      </p>
+                      <p class="info1"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-number mb-50">
+                    <h4><span>+92 </span> 3183219259</h4>
+                    <p>riyasatali2025.pk@gmail.com</p>
+                  </div>
+                  <div class="footer-form">
+                    <div id="mc_embed_signup">
+                      <form
+                        target="_blank"
+                        action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        method="get"
+                        class="subscribe_form relative mail_part"
+                        novalidate="true"
+                      >
+                        <input
+                          type="email"
+                          name="EMAIL"
+                          id="newsletter-form-email"
+                          placeholder=" Email Address "
+                          class="placeholder hide-on-focus"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Your email address'"
+                        />
+                        <div class="form-icon">
+                          <button
+                            type="submit"
+                            name="submit"
+                            id="news"
+                            class="email_icon"
+                          >
+                            Send
+                          </button>
+                        </div>
+                        <div class="mt-10 info"></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-9 col-lg-8">
+                <div class="footer-copy-right">
+                  <p>
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    © 2025 [Pluse Medical].
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <a href="index.html" target="_blank"></a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4">
+                <div class="footer-social f-right">
+                  <a href="https://www.twitter.com"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://www.facebook.com"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="index.php"><i class="fas fa-globe"></i></a>
+                  <a href="https://www.instagram.com"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="back-top">
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Login</h2>
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                required
+              />
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <div class="switch-link">
+            Don't have an account?
+            <a href="#loginForm" id="showSignup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripting.js"></script>
+  </body>
+</html>

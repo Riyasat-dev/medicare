@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HospitalCare</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+   
+    <nav
+      class="navbar navbar-expand-lg navbar-custum navbar-light bg-light p-5"
+    >
+      <div class="container-fluid">
+        <div class="logo">
+          <a
+            href="index.html"
+            style="text-decoration: none; display: flex; align-items: center"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              style="margin-right: 10px"
+            >
+              <path
+                d="M12 2L2 7V17L12 22L22 17V7L12 2Z"
+                stroke="#1f2b7b"
+                stroke-width="2"
+              />
+              <path d="M12 22V12" stroke="#1f2b7b" stroke-width="2" />
+              <path d="M7 7L17 17" stroke="#1f2b7b" stroke-width="2" />
+              <path d="M17 7L7 17" stroke="#1f2b7b" stroke-width="2" />
+            </svg>
+            <span style="font-size: 22px; font-weight: 700; color: #559af3"
+              >MediCare</span
+            >
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctor.html">Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="department.html">Department</a>
+            </li>
+           <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="blog.html"
+                id=""
+                role=""
+                data-bs-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="blog_details.html"
+                    >blog-Details</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="elements.html">Elements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a
+              href="f"
+              class="text-light"
+              style="text-decoration: none"
+              id="loginBtn"
+            >
+              <button class="btn btn-outline btn-primary px-4" type="submit">
+                Login
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid slider-area d-flex align-items-center" style="height: 300px; background:url(assets/img/hero/hero2.png);">
+        <div class="row justify-content-center w-100">
+          <div class="col-12 text-center">
+            <div class="hero__caption">
+              <h1 class="cd-headline letters scale tex m-0" style="color: #102039;">
+                Department
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div class="department_area section-padding2">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center mb-100 p-5">
+                <h1>Our Medical Services</h1>
+              </div>
+            </div>
+          </div>
+         <div class="nav-scroll-wrapper">
+  <!-- <ul class="nav nav-tabs" id="departmentTabs" role="tablist"> -->
+    <!-- your li.nav-item buttons here -->
+     <ul class="nav nav-tabs" id="departmentTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="dentistry-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#dentistry"
+                      type="button"
+                      role="tab"
+                      aria-controls="dentistry"
+                      aria-selected="true"
+                    >
+      <i class="fas fa-tooth"></i>
+                    <h4>Dentistry</h4>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="cardiology-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cardiology"
+                      type="button"
+                      role="tab"
+                      aria-controls="cardiology"
+                      aria-selected="false"
+                    >
+<i class="fa-solid fa-x-ray"></i>                      <h4>Cardiology</h4>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="ent-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#ent"
+                      type="button"
+                      role="tab"
+                      aria-controls="ent"
+                      aria-selected="false"
+                    >
+<i class="fas fa-ear-listen"></i>                      <h4>ENT Specialists</h4>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="astrology-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#astrology"
+                      type="button"
+                      role="tab"
+                      aria-controls="astrology"
+                      aria-selected="false"
+                    >
+<i class="fas fa-star-and-crescent"></i>                      <h4>Astrology</h4>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="neuroanatomy-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#neuroanatomy"
+                      type="button"
+                      role="tab"
+                      aria-controls="neuroanatomy"
+                      aria-selected="false"
+                    >
+<i class="fas fa-brain"></i>                      <h4>Neuroanatomy</h4>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="blood-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#blood"
+                      type="button"
+                      role="tab"
+                      aria-controls="blood"
+                      aria-selected="false"
+                    >
+<i class="fas fa-tint"></i>                       <h4>Blood Screening</h4>
+                    </button>
+                  </li>
+                </ul>
+  <!-- </ul> -->
+</div>
+
+
+          <div class="dept_main_info white-bg mt-5">
+            <div class="tab-content" id="departmentTabsContent">
+              <div
+                class="tab-pane fade show active"
+                id="dentistry"
+                role="tabpanel"
+                aria-labelledby="dentistry-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3 class="text-light">
+                        Dentist with surgical mask holding scaler near patient
+                      </h3>
+                      <p class="text-light">
+                        Dental care services including cleaning, fillings,
+                        braces, and oral surgeries to keep your smile healthy.
+                      </p>
+                      <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="Dentistry Department"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="cardiology"
+                role="tabpanel"
+                aria-labelledby="cardiology-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3>Cardiology</h3>
+                      <p>
+                        Diagnosis and treatment of heart-related diseases and
+                        conditions by expert heart specialists.
+                      </p>
+                      <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="Cardiology Department"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="ent"
+                role="tabpanel"
+                aria-labelledby="ent-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3>ENT Specialists</h3>
+                      <p>
+                        Expert care for ear, nose, and throat disorders
+                        including infections, hearing issues, and allergies.
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo
+                        viverra maecenas accumsan lacus vel facilisis.
+                      </p>
+                      <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="ENT Department"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="astrology"
+                role="tabpanel"
+                aria-labelledby="astrology-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3>Astrology</h3>
+                      <p>
+                        Personalized astrological guidance for mental wellness,
+                        life decisions, and holistic balance.
+                      </p>
+                      <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="Astrology Services"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="neuroanatomy"
+                role="tabpanel"
+                aria-labelledby="neuroanatomy-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3>Neuroanatomy</h3>
+                      <p>
+                        Study and treatment of the brain and nervous system to
+                        manage neurological disorders.
+                      </p>
+                      <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="Neuroanatomy Department"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="blood"
+                role="tabpanel"
+                aria-labelledby="blood-tab"
+              >
+                <div class="row align-items-center no-gutters">
+                  <div class="col-lg-7 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_info">
+                      <h3>Blood Screening</h3>
+                      <p>
+                        Comprehensive blood tests to detect infections,
+                        deficiencies, and monitor overall health.
+                      </p>
+ <a href="#" class="dep-btn"  type="button" class="dep-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        >Appointment <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 col-md-12 mb-5">
+                    <div class="dept_thumb">
+                      <img
+                        src="assets/img/gallery/department_man.png"
+                        alt="Blood Screening"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    </main>
+    <footer class="mt-5">
+        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                              <div class="logo">
+          <a
+            href="index.html"
+            style="text-decoration: none; display: flex; align-items: center"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              style="margin-right: 10px"
+            >
+              <path
+                d="M12 2L2 7V17L12 22L22 17V7L12 2Z"
+                stroke="#0062ff"
+                stroke-width="2"
+              />
+              <path d="M12 22V12" stroke="#0062ff" stroke-width="2" />
+              <path d="M7 7L17 17" stroke="#0062ff" stroke-width="2" />
+              <path d="M17 7L7 17" stroke="#0062ff" stroke-width="2" />
+            </svg>
+            <span style="font-size: 22px; font-weight: 700; color: #0062ff"
+              >MediCare</span
+            >
+          </a>
+        </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4 class="mt-5">department</h4>
+                                    <div class="footer-pera">
+                                        <p class="info1">Your health, our priority. </p>
+                                        <p class="info1">📍 Pakistan, Hyderabad</p>
+                                        <p class="info1">Committed to excellence in patient care, technology, and service.</p>
+                                        <p class="info1">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                              <div class="footer-number mb-50">
+                                <h4><span>+92 </span> 3183219259</h4>
+                                <p>riyasatali2025.pk@gmail.com</p>
+                            </div>
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="news" class="email_icon">
+                                                    Send
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+                                <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> © 2025 [Pluse Medical].
+  <i class="fa fa-heart" aria-hidden="true"></i> <a href="index.html" target="_blank"></a>
+  </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-social f-right">
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="index.php"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+  
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Login</h2>
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                required
+              />
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <div class="switch-link">
+            Don't have an account?
+            <a href="#loginForm" id="showSignup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="appointmentForm">
+          
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+
+          <!-- 🔽 Doctor Dropdown -->
+          <div class="mb-3">
+            <label for="doctor" class="form-label">Choose Doctor</label>
+            <select class="form-select" id="doctor" required>
+              <option value="" selected disabled>-- Select Doctor --</option>
+              <option value="Dr. Ali Khan">Dr. Ali Khan</option>
+              <option value="Dr. Sana Malik">Dr. Sana Malik</option>
+              <option value="Dr. Usman Rafiq">Dr. Usman Rafiq</option>
+              <option value="Dr. Ayesha Siddiqui">Dr. Ayesha Siddiqui</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Submit Appointment</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="scripting.js"></script>
+
+  </body>
+</html>
